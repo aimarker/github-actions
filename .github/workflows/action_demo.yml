@@ -22,7 +22,7 @@ jobs:
           python-version: ${{matrix.python-version}}
       - name: Install dependencies
         run: |
-          make lint
+          make install
       - name: Test with pytest
         run: |
           make test
